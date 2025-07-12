@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+        }
+
+        #first {
+            background-color: blue;
+            position: relative;
+            left: 200px;
+            top: 400px;
+        }
+
+        #second {
+            background-color: black;
+            position: relative;
+            left: 400px;
+            top: 400px;
+        }
+
+        #third {
+            background-color: yellow;
+            border-radius: 50%;
+            position: absolute;
+            left: 300px;
+            transition: 1s;
+            cursor: pointer;
+        }
+
+        #third:hover {
+            transform: translateY(-80px);
+            border-radius: 0;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="first"></div>
+    <div id="second"></div>
+    <div id="third"></div>
+</body>
+
+</html>
