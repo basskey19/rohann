@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>REAL Working calculator</h1>
+        <hr><br><br>
+        Num 1 : <input type="number" id="num1"><br><br>
+        Num 2 : <input type="number" id="num2"><br><br>
+        <button onclick="subract()">subract</button>
+        <button onclick="add()">add</button>
+        <button onclick="multiply()">multiply</button>
+        <button onclick="division()">divide</button>
+        <h3 id="result">the Correct answer is</h3>
+    </center>
+    <script>
+        function add() {
+            a = parseInt(document.getElementById("num1").value)
+            b = parseInt(document.getElementById("num2").value)
+            ans = a + b
+            document.getElementById("result").innerHTML = ans
+        }
+    </script>
+
+    <script>
+        function subract() {
+            a = parseInt(document.getElementById("num1").value)
+            b = parseInt(document.getElementById("num2").value)
+            ans = a - b
+            document.getElementById("result").innerHTML = ans
+        }
+    </script>
+    <script>
+        function multiply() {
+            a = parseInt(document.getElementById("num1").value)
+            b = parseInt(document.getElementById("num2").value)
+            ans = a * b
+            document.getElementById("result").innerHTML = ans
+        }
+    </script>
+    <script>
+        function division() {
+            a = parseInt(document.getElementById("num1").value)
+            b = parseInt(document.getElementById("num2").value)
+            ans = a / b
+            document.getElementById("result").innerHTML = ans
+        }
+    </script>
+
+</body>
+
+</html>
