@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body >
+    <center>
+        <h1>multiply your physical power</h1>
+        Arm power: <input type="number" id="num1"><br><br>
+        Leg power: <input type="number" id="num2"><br><br>
+        <button onclick="mul()">multiply</button>
+        <button onclick="div()">divide</button>
+        <button onclick="add()">Add</button>
+        <button onclick="sub()">subract</button>
+        <fieldset style="margin-top: 20px;">
+
+            <h2 id="result">Your Future Power Will Be seen Here</h2>
+        </fieldset>
+    </center>
+    <script>
+        function mul() {
+
+            let a = parseInt(document.getElementById("num1").value);
+            let b = parseInt(document.getElementById("num2").value);
+            let ans = a * b
+
+            document.getElementById("result").innerHTML = `The Ans is :${ans}`;
+        }
+    </script>
+    <script>
+        function div() {
+
+            let a = parseInt(document.getElementById("num1").value);
+            let b = parseInt(document.getElementById("num2").value);
+            let ans = a / b
+
+            document.getElementById("result").innerHTML = `The Ans is :${ans}`;
+        }
+    </script>
+    <script>
+        function add() {
+
+            let a = parseInt(document.getElementById("num1").value);
+            let b = parseInt(document.getElementById("num2").value);
+            let ans = a + b
+
+            document.getElementById("result").innerHTML = `The Ans is :${ans}`;
+        }
+    </script>
+    <script>
+        function sub() {
+
+            let a = parseInt(document.getElementById("num1").value);
+            let b = parseInt(document.getElementById("num2").value);
+            let ans = a - b
+
+            document.getElementById("result").innerHTML = `The Ans is :${ans}`;
+        }
+    </script>
+</body>
+
+</html>
