@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <form id="simpleform">
+        <h1>Log in or sign in for your Fortnite Account </h1>
+        <label>user name</label>
+        <input type="text" id="username" placeholder="Dont write Your Real name">
+        <br><br>
+        <Label>Email:</Label>
+        <input type="text" id="Email" placeholder="Enter your Email">
+        <br><br>
+        <Label>Password:</Label>
+        <input type="text" id="Password" placeholder="Dont share your password ">
+        <br><br>
+        <Label>Phone Number:</Label>
+        <input type="text" id="Phone" placeholder="Write this so we can contact ">
+        <br><br>
+        <button type="button" onclick="validateForm()">Done</button>
+        <h2 id="result"></h2>
+    </form>
+    <script>
+        function validateForm() {
+            const username = document.getElementById("username").value;
+            const Email = document.getElementById("Email").value;
+            const password = document.getElementById("Password").value;
+            const Phone = document.getElementById("Phone").value;
+            const ErrorMessage = document.getElementById("result");
+
+            if (username === "") {
+                ErrorMessage.textContent = "Username field is requrired";
+                ErrorMessage.style.color = "red";
+            } else if (Email === "") {
+                ErrorMessage.textContent = "Email  field is requrired";
+                ErrorMessage.style.color = "red";
+            } else if (Phone === "") {
+                ErrorMessage.textContent = "Phone number  field is requrired";
+                ErrorMessage.style.color = "red";
+            }
+            else if (password.length < 6 || password.length > 12) {
+                ErrorMessage.textContent = "Password must be between 6 and  12 !";
+                ErrorMessage.style.color = "red";
+            }
+            else {
+                ErrorMessage.textContent = "Your New Account Is Ready";
+                ErrorMessage.style.color = "Green";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
