@@ -3,7 +3,7 @@ function greet(){
 }
 greet()
 function Helloji(){
-    console.log( "hello kaise ho")
+    console.log( "hello sir")
 }
 Helloji()
 

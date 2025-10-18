@@ -1,0 +1,105 @@
+#container {
+  width: 1000px;
+  height: 550px;
+
+  background-image: url(https://wallpapers.com/images/hd/scientific-calculator-on-black-background-ezmjqmuo4jd7qevz.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px auto;
+}
+
+#calculator {
+  height: 520px;
+  width: 320px;
+  background-color: 252A34;
+
+  margin: 0 auto;
+  position: relative;
+  top: 15px;
+  border-radius: 15px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  ;
+
+}
+
+#result {
+  height: 120px;
+}
+
+#history {
+  text-align: right;
+  height: 20px;
+  margin: 0 20px;
+  padding-top: 20px;
+  font-size: 15px;
+  color: white;
+}
+
+#output {
+  text-align: right;
+  height: 60px;
+  margin: 10px 20px;
+  font-size: 30px;
+}
+
+#keyboard {
+  height: 400px;
+}
+
+.operator,
+.number,
+.empty {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 15px;
+  float: left;
+  border-width: 1;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.empty {
+  border-width: 0;
+}
+
+.number,
+.empty {
+  background-color: #eaedef;
+}
+
+.number,
+.operator {
+  cursor: pointer;
+}
+
+.operator:active,
+.number:active {
+  font-size: 13px;
+  background-color: #FF8000;
+}
+
+button:nth-child(4) {
+  font-size: 20px;
+  background-color: #08D9D6;
+}
+
+button:nth-child(8) {
+  font-size: 20px;
+  background-color: #FF2E63;
+}
+
+button:nth-child(12) {
+  font-size: 20px;
+  background-color: 471396;
+}
+
+button:nth-child(16) {
+  font-size: 20px;
+  background-color: #4E56C0;
+}
+
+button:nth-child(20) {
+  font-size: 20px;
+  background-color: E5C95F;
+}
